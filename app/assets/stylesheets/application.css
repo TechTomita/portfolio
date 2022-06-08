@@ -32,3 +32,8 @@
     transform: scale(1, 1);
     transform-origin: left;
 }
+#top-img {
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+}
