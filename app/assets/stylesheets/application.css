@@ -32,3 +32,27 @@
     transform: scale(1, 1);
     transform-origin: left;
 }
+
+/* images */
+img {
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Works page */
+#message-board-app, #emotions-and-snap, #microposts {
+  color: black;
+}
+#message-board-app:hover {
+  transition: color .3s;
+  color: green;
+}
+#emotions-and-snap:hover {
+    transition: color .3s;
+    color: red;
+}
+#microposts:hover {
+    transition: color .3s;
+    color: blue;
+}
