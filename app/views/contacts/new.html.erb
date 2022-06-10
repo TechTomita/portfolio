@@ -1,0 +1,35 @@
+<div class="mb-5">
+    <p class="mt-5">
+        ご意見・ご相談等ございましたらお気軽にお問い合わせください。<br>
+        下記フォームよりわかる範囲でご記入ください。必須の項目は必ずご記入ください。
+    </p>
+</div>
+<%= render "layouts/flash_messages" %>
+<div class="row">
+    <div class="col-lg-8">
+        <%= form_with(model: @contact) do |f| %>
+        <%= render "layouts/error_messages", model: f.object %>
+            <div>
+                <%= f.label :company, "貴社名" %>
+                <%= f.text_field :company, class: "form-control mb-2" %>
+            </div>
+            <div>
+                <%= f.label :name, "お名前 ※必須" %>
+                <%= f.text_field :name, class: "form-control mb-2" %>
+            </div>
+            <div>
+                <%= f.label :email, "Email ※必須" %>
+                <%= f.email_field :email, class: "form-control mb-2" %>
+            </div>
+            <div>
+                <%= f.label :tel, "Tel" %>
+                <%= f.telephone_field :tel, class: "form-control mb-2" %>
+            </div>
+            <div>
+                <%= f.label :message, "お問合せ内容 ※必須" %>
+                <%= f.text_area :message, class: "form-control mb-2" %>
+            </div>
+            <%= f.submit "送信", class: "btn btn-primary" %>
+        <% end %>
+    </div>
+</div>

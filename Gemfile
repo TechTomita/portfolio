@@ -64,3 +64,6 @@ group :development do
   # gem "spring"
 end
 
+gem "dotenv-rails"
+
+gem 'rails-i18n'
