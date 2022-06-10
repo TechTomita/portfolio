@@ -4,4 +4,7 @@ class ToppagesController < ApplicationController
   
   def works
   end
+  
+  def about
+  end
 end

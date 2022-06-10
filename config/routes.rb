@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   root to: "toppages#index"
   
   get "works", to: "toppages#works"
+  get "about", to: "toppages#about"
+  
   resources :contacts, only: [:new, :create]
 end
