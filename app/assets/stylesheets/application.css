@@ -56,3 +56,8 @@ img {
     transition: color .3s;
     color: blue;
 }
+
+/* About page */
+#link {
+    padding-top: 10vh;
+}
