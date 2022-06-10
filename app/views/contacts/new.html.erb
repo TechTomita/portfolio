@@ -5,10 +5,10 @@
     </p>
 </div>
 <%= render "layouts/flash_messages" %>
-<%= render "layouts/error_messages", model: @contact %>
 <div class="row">
     <div class="col-lg-8">
         <%= form_with(model: @contact) do |f| %>
+        <%= render "layouts/error_messages", model: f.object %>
             <div>
                 <%= f.label :company, "貴社名" %>
                 <%= f.text_field :company, class: "form-control mb-2" %>

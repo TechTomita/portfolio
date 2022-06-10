@@ -65,3 +65,5 @@ group :development do
 end
 
 gem "dotenv-rails"
+
+gem 'rails-i18n'
