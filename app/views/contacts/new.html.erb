@@ -1,2 +1,20 @@
-<h1>Contacts#new</h1>
-<p>Find me in app/views/contacts/new.html.erb</p>
+<h2>お問合せフォーム</h2>
+
+<%= form_with model: @contact do |f| %>
+    <%= f.label "貴社名", :company %>
+    <%= f.text_field :company %>
+    
+    <%= f.label "お名前", :name %>
+    <%= f.text_field :neam %>
+    
+    <%= f.label "E-mail", :email %>
+    <%= f.email_field :email %>
+    
+    <%= f.label "Tel", :tel %>
+    <%= f.telephone_field :tel%>
+    
+    <%= f.label "お問合せ内容", :message %>
+    <%= f.text_area :message %>
+    
+    <%= f.submit "送信" %>
+<% end %>
